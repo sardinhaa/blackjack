@@ -1,7 +1,5 @@
 import random
-
 cards_list = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
-
 def card_value(card):
     if card in ['Jack', 'Queen', 'King']:
         return 10
@@ -61,7 +59,7 @@ while True:
         else:
             print("It's a tie!")
             ties += 1
-    again = input("\nPlay again? (y/n): ").lower()
+    again = input("\nPlay again? (1 to continue, any key else to quit): ").lower()
     if again != "1":
         print(f"\nFinal Score: You {player_wins} - Dealer {dealer_wins} (Ties: {ties})")
         print("Thanks for playing!")
